@@ -546,7 +546,7 @@ body._lock {
 
 .popular-slider-next {
   position: absolute;
-  right: -10px;
+  right: -10%;
   transform: rotate(180deg);
 }
 
