@@ -18,7 +18,7 @@ body {
     }
 }
 
-img {
+* img {
     max-width: 100%;
 }
 
@@ -26,6 +26,17 @@ img {
     max-width: 1450px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*-----------------General------------------*/
@@ -65,3 +76,5 @@ img {
 // ------------------------- //
 
 @import "blocks/_header";
+@import "blocks/_hero";
+@import "blocks/_filter";
