@@ -451,4 +451,124 @@ body._lock {
   .block-filter__item:hover {
     background-color: #adadad;
   }
+}
+
+.featured {
+  padding: clamp(1.25rem, -0.023rem + 15vw, 5.625rem) 0;
+}
+.featured__box {
+  margin-top: clamp(1.875rem, 1.42rem + 2.27vw, 3.438rem);
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  overflow: auto;
+  padding-right: 15px;
+}
+.featured__item {
+  flex: 0 0 auto;
+}
+
+.popular {
+  padding: clamp(1.875rem, -0.489rem + 11.82vw, 10rem) 0;
+  background: #1a242f url("../img/slider-bg.png") center center/cover no-repeat;
+}
+.popular__slider {
+  margin-top: 40px;
+  position: relative;
+}
+.popular__link {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.popular-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+@media (max-width: 660px) {
+  .popular-slide {
+    text-align: center;
+  }
+}
+.popular-slide__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.26;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+.popular-slide__labels {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 660px) {
+  .popular-slide__labels {
+    justify-content: center;
+  }
+}
+.popular-slide__label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: inline-flex;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1800px) {
+  .slider-buttons {
+    top: -100px;
+    right: 0;
+    width: auto;
+    gap: 30px;
+  }
+}
+
+.popular-slider-prev {
+  position: absolute;
+  left: -10%;
+}
+
+.popular-slider-next {
+  position: absolute;
+  right: -10px;
+  transform: rotate(180deg);
+}
+
+.popular-slider-btn {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: url("../img/icons/arrow-slider.svg") left 30px center no-repeat;
+  border: 1px solid var(--white);
+  cursor: pointer;
+}
+@media (max-width: 1800px) {
+  .popular-slider-btn {
+    position: static;
+  }
+}
+@media (max-width: 660px) {
+  .popular-slider-btn {
+    display: none;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.2;
 }/*# sourceMappingURL=style.css.map */
