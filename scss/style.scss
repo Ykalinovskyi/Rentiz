@@ -1,0 +1,67 @@
+@import "_variables";
+@import "_mixins";
+@import "_fonts";
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--white);
+    font-weight: normal;
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*-----------------General------------------*/
+.title {
+    font-weight: 600;
+    font-size: clamp(1.875rem, 11.548rem + 11.64vw, 3rem);
+    line-height: 1.26;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.link {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 22px 42px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    transition: background-color .3s ease-in;
+    @media(any-hover: hover) {
+        &:hover {
+            background-color: var(--hover);
+        }
+    }
+}
+
+// ------------------------- //
+
+@import "blocks/_header";
