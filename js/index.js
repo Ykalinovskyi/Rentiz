@@ -32,6 +32,16 @@ if (filter) {
 	})
 }
 
+const reviewsSlider = new Swiper('.slider-reviews', {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    autoHeight: true,
+    navigation: {
+        nextEl: '.slider-reviews-next',
+        prevEl: '.slider-reviews-prev',
+    }
+})
+
 //swiper
 const popularSlider = new Swiper('.popular-slider', {
     spaceBetween: 20,
@@ -50,3 +60,19 @@ const popularSlider = new Swiper('.popular-slider', {
         }
     }
 })
+
+//gallery 
+
+// const galleryItems = document.querySelectorAll('.gallery__item');
+
+// if(galleryItems.length > 0) {
+//     galleryItems.forEach(item => {
+//         new Swiper(item, {
+//             sliderPerView: 1,
+//             autoplay: {
+//                 delay: 5000,
+//             },
+//             effect: 'fade'
+//         })
+//     })
+// }
